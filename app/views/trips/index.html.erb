@@ -1,0 +1,29 @@
+<div class="trips-list">
+  <table class="trips-list-table">
+    <tr class="trips-list-title">
+      <th>Date</th>
+      <th>City</th>
+      <th>Preview</th>
+      <th>Status</th>
+    </tr>
+    <% @trips.each do |trip| %>
+      <tr class="trips-list-data">
+        <td><%= trip.date %></td>
+        <td><%= trip.city %></td>
+        <td>
+          <ul class="trips-list view-edit-delete">
+            <li><%= link_to "Show", trip_path(trip), class: "new-trip-link" %></li>
+            <li><%= link_to "Edit", edit_trip_path(trip), class: "new-trip-link" %></li>
+            <li><%= link_to "Delete", trips_path, class: "new-trip-link" %></li>
+          </ul>
+        </td>
+        <td><%= trip.completed %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="new-trip">
+  <span class="new-trip-img">"+"</span>
+  <%= link_to "Add New Trip", new_trip_path, class: "new-trip-link" %>
+</div>
