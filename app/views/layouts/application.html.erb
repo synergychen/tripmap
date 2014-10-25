@@ -8,7 +8,54 @@
 </head>
 <body>
 
-<%= yield %>
+  <div class="header">
+    <span class="header-logo"></span>
+
+    <%= link_to "TripMap", trips_path, class: "header-title-link" %>
+    <ul class="header-nav left">
+      <li class="header-nav-item">
+        <%= link_to "My Trips", trips_path, class: "header-nav-link" %>
+      </li>
+    </ul>
+
+    <ul class="header-nav user-nav right left">
+      <li class="header-nav-item">
+        <%= link_to "Chen Huang", trips_path, class: "header-nav-link" %>
+      </li>
+      <li class="header-nav-item">
+        <%= link_to "Login", trips_path, class: "header-nav-link" %>
+      </li>
+      <li class="header-nav-item">
+        <%= link_to "Signup", trips_path, class: "header-nav-link" %>
+      </li>
+    </ul>
+  </div>
+
+  <div class="main">
+    <hr />
+    <%= yield %>
+    <hr />
+  </div>
+
+  <div class="footer">
+    <ul class="footer-nav left">
+      <li class="footer-nav-item">
+        <%= link_to "Contact", trips_path, class: "footer-nav-link" %>
+      </li>
+      <li class="footer-nav-item">
+        <%= link_to "Blog", trips_path, class: "footer-nav-link" %>
+      </li>
+      <li class="footer-nav-item">
+        <%= link_to "About", trips_path, class: "footer-nav-link" %>
+      </li>
+    </ul>
+
+    <ul class="footer-nav right">
+      <li class="footer-nav-item">
+        "© 2014 TripMap"
+      </li>
+    </ul>
+  <div>
 
 </body>
 </html>
