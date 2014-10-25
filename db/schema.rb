@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20141025162936) do
     t.datetime "end_time"
     t.string   "transportation_mode"
     t.integer  "transportation_time"
+    t.integer  "trip_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

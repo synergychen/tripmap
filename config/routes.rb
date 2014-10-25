@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   root "trips#index"
 
-  resources :trips, only: [:index, :new, :create, :show, :edit, :update, :destroy]
+  resources :trips do
+    resources :locations, only: [:new, :create]
+  end
 end

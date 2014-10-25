@@ -6,6 +6,7 @@ class CreateLocations < ActiveRecord::Migration
       t.datetime :end_time
       t.string :transportation_mode
       t.integer :transportation_time
+      t.integer :trip_id
 
       t.timestamps
     end

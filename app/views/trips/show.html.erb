@@ -25,19 +25,22 @@
       <th>Transportation Time</th>
     </tr>
     <% @locations.each do |location| %>
-      <%= form_for location do |form| %>
-        <tr class="trip-locations-list-data">
-          <td>xxx</td>
-          <td><%= location.location %></td>
-          <td><%= location.start_time %></td>
-          <td><%= location.end_time %></td>
-          <td>xxx</td>
-          <td><%= location.transportation_mode %></td>
-          <td><%= location.transportation_time %></td>
-        </tr>
-      <% end %>
+      <tr class="trip-locations-list-data">
+        <td>xxx</td>
+        <td><%= location.location %></td>
+        <td><%= location.start_time %></td>
+        <td><%= location.end_time %></td>
+        <td>xxx</td>
+        <td><%= location.transportation_mode %></td>
+        <td><%= location.transportation_time %></td>
+      </tr>
     <% end %>
   </table>
+</div>
+
+<div class="new-location">
+  <span class="new-location-img">"+"</span>
+  <%= link_to "Add New Location", new_trip_location_path(@trip), class: "new-location-link" %>
 </div>
 
 <div class="back-link">
