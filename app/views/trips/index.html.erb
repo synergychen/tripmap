@@ -13,8 +13,8 @@
         <td>
           <ul class="trips-list view-edit-delete">
             <li><%= link_to "Show", trip_path(trip), class: "new-trip-link" %></li>
-            <li><%= link_to "Edit", edit_trip_path(trip), class: "new-trip-link" %></li>
-            <li><%= link_to "Delete", trips_path, class: "new-trip-link" %></li>
+            <li><%= link_to "Edit", edit_trip_path(trip), class: "edit-trip-link" %></li>
+            <li><%= button_to "Delete", trip_path(trip), class: "delete-trip-button", method: :delete %></li>
           </ul>
         </td>
         <td><%= trip.completed %></td>
