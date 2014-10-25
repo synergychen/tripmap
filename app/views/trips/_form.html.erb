@@ -1,0 +1,9 @@
+<%= form_for trip, html: { class: "new-edit-trip-form" } do |form| %>
+  <%= form.label :date %>
+  <%= form.text_field :date %>
+
+  <%= form.label :city %>
+  <%= form.text_field :city %>
+
+  <%= form.submit %>
+<% end %>
