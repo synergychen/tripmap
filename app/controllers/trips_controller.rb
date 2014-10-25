@@ -16,4 +16,14 @@ class TripsController < ApplicationController
     end
   end
 
+  def show
+    @locations = Location.all
+  end
+
+
+  private
+
+  def trip_params
+    params.require(:trip).permit(:date, :city, :completed)
+  end
 end

@@ -1,0 +1,31 @@
+<div class="trip-locations-list">
+  <table class="trip-locations-list-table">
+    <tr class="trip-locations-list-title">
+      <th>No.</th>
+      <th>Location</th>
+      <th>Start Time</th>
+      <th>End Time</th>
+      <th>Stay Time</th>
+      <th>Transportation Mode(To Next Location)</th>
+      <th>Transportation Time</th>
+    </tr>
+    <% @locations.each do |location| %>
+      <%= form_for location do |form| %>
+        <tr class="trip-locations-list-data">
+          <td>xxx</td>
+          <td><%= location.location %></td>
+          <td><%= location.start_time %></td>
+          <td><%= location.end_time %></td>
+          <td>xxx</td>
+          <td><%= location.transportation_mode %></td>
+          <td><%= location.transportation_time %></td>
+        </tr>
+      <% end %>
+    <% end %>
+  </table>
+</div>
+
+<div class="back-link">
+  <span class="back-link-to-trips-img"><<</span>
+  <%= link_to "Back to See More Trips", trips_path, class: "back-link-to-trips" %>
+</div>
