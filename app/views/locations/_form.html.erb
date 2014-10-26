@@ -1,4 +1,4 @@
-<%= form_for location, url: trip_locations_path(trip), html: { class: "new-location-form" } do |form| %>
+<%= form_for [trip, location] do |form| %>
   <%= form.label :location %>
   <%= form.text_field :location %>
 
@@ -14,5 +14,5 @@
   <%= form.label :transportation_time %>
   <%= form.text_field :transportation_time %>
 
-  <%= form.submit "Create New Location" %>
+  <%= form.submit %>
 <% end %>

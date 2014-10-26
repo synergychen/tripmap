@@ -33,6 +33,7 @@
         <td>xxx</td>
         <td><%= location.transportation_mode %></td>
         <td><%= location.transportation_time %></td>
+        <td><%= link_to "Edit", edit_trip_location_path(@trip, location), class: "edit-trip-link" %></td>
       </tr>
     <% end %>
   </table>

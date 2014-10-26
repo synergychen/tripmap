@@ -14,6 +14,21 @@ class LocationsController < ApplicationController
     end
   end
 
+  def edit
+    @trip = Trip.find(params[:trip_id])
+    @location = @trip.locations.find(params[:id])
+  end
+
+  def update
+    trip = Trip.find(params[:trip_id])
+    location = trip.locations.find(params[:id])
+    if location.update(location_params)
+      redirect_to trip_path(trip)
+    else
+      render :edit
+    end
+  end
+
   private
 
   def location_params
