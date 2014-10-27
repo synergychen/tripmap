@@ -34,6 +34,7 @@
         <td><%= location.transportation_mode %></td>
         <td><%= location.transportation_time %></td>
         <td><%= link_to "Edit", edit_trip_location_path(@trip, location), class: "edit-trip-link" %></td>
+        <td><%= button_to "Delete", trip_location_path(@trip, location), class: "delete-location-button", method: :delete %></td>
       </tr>
     <% end %>
   </table>
