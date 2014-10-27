@@ -13,3 +13,4 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'pry', group: :development
 gem 'monban-generators'
+gem 'rails_12factor', group: :production
