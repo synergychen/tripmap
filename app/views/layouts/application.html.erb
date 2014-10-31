@@ -7,34 +7,42 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
   <div class="header">
-    <span class="header-logo"></span>
+    <div class="header-container">
+      <div class="header-logo"></div>
 
-    <%= link_to "TripMap", trips_path, class: "header-title-link" %>
-    <ul class="header-nav left">
-      <li class="header-nav-item">
-        <%= link_to "My Trips", trips_path, class: "header-nav-link" %>
-      </li>
-    </ul>
+      <div class="header-title left">
+        <%= link_to "TripMap", trips_path, class: "header-title-link" %>
+      </div>
 
-    <ul class="header-nav user-nav right left">
-    <% if signed_in? %>
-      <li class="header-nav-item">
-        <%= link_to current_user.email, trips_path, class: "header-nav-link" %>
-      </li>
-      <li>
-        <%= link_to "Sign out", session_path, method: :delete %>
-      </li>
-    <% else %>
-      <li class="header-nav-item">
-        <%= link_to "Login", new_session_path, class: "header-nav-link" %>
-      </li>
-      <li class="header-nav-item">
-        <%= link_to "Signup", new_user_path, class: "header-nav-link" %>
-      </li>
-    <% end %>
-    </ul>
+      <div class="header-nav left">
+        <ul class="header-nav-list">
+          <li class="header-nav-item">
+            <%= link_to "My Trips", trips_path, class: "header-nav-link" %>
+          </li>
+        </ul>
+      </div>
+
+      <div class="header-nav right">
+        <ul class="header-nav-list">
+          <% if signed_in? %>
+            <li class="header-nav-item">
+              <%= link_to current_user.email, trips_path, class: "header-nav-link" %>
+            </li>
+            <li>
+              <%= link_to "Sign out", session_path, method: :delete, class: "header-nav-link" %>
+            </li>
+          <% else %>
+            <li class="header-nav-item">
+              <%= link_to "Login", new_session_path, class: "header-nav-link" %>
+            </li>
+            <li class="header-nav-item">
+              <%= link_to "Signup", new_user_path, class: "header-nav-link" %>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
   </div>
 
   <div class="main">
@@ -46,22 +54,22 @@
   <div class="footer">
     <ul class="footer-nav left">
       <li class="footer-nav-item">
-        <%= link_to "Contact", trips_path, class: "footer-nav-link" %>
+      <%= link_to "Contact", trips_path, class: "footer-nav-link" %>
       </li>
       <li class="footer-nav-item">
-        <%= link_to "Blog", trips_path, class: "footer-nav-link" %>
+      <%= link_to "Blog", trips_path, class: "footer-nav-link" %>
       </li>
       <li class="footer-nav-item">
-        <%= link_to "About", trips_path, class: "footer-nav-link" %>
+      <%= link_to "About", trips_path, class: "footer-nav-link" %>
       </li>
     </ul>
 
     <ul class="footer-nav right">
       <li class="footer-nav-item">
-        "© 2014 TripMap"
+      "© 2014 TripMap"
       </li>
     </ul>
-  <div>
+    <div>
 
-</body>
-</html>
+    </body>
+  </html>
