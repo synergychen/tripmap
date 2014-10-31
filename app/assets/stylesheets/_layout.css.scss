@@ -21,7 +21,6 @@ body {
   }
 }
 
-
 .header-logo {
 }
 
@@ -64,6 +63,44 @@ body {
   }
 }
 
+.footer {
+  margin-top: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid #e5e5e5;
+  font: 12px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+
+  .footer-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.footer-nav {
+  .footer-nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .footer-nav-item {
+      float: left;
+      display: inline block;
+    }
+
+    .footer-nav-link {
+      padding: 4px 8px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .footer-nav-link:hover {
+      color: #0040fa;
+      text-decoration: none;
+    }
+  }
+}
+
 .left {
   float: left;
 }
@@ -72,6 +109,6 @@ body {
   float: right;
 }
 
-.header-clear {
+.clear {
   clear: both
 }

@@ -43,7 +43,7 @@
         </ul>
       </div>
 
-      <div class="header-clear"></div>
+      <div class="clear"></div>
     </div>
   </div>
 
@@ -52,24 +52,32 @@
   </div>
 
   <div class="footer">
-    <ul class="footer-nav left">
-      <li class="footer-nav-item">
-      <%= link_to "Contact", trips_path, class: "footer-nav-link" %>
-      </li>
-      <li class="footer-nav-item">
-      <%= link_to "Blog", trips_path, class: "footer-nav-link" %>
-      </li>
-      <li class="footer-nav-item">
-      <%= link_to "About", trips_path, class: "footer-nav-link" %>
-      </li>
-    </ul>
+    <div class="footer-container">
+      <div class="footer-nav left">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+          <%= link_to "Contact", trips_path, class: "footer-nav-link" %>
+          </li>
+          <li class="footer-nav-item">
+          <%= link_to "Blog", trips_path, class: "footer-nav-link" %>
+          </li>
+          <li class="footer-nav-item">
+          <%= link_to "About", trips_path, class: "footer-nav-link" %>
+          </li>
+        </ul>
+      </div>
 
-    <ul class="footer-nav right">
-      <li class="footer-nav-item">
-      "© 2014 TripMap"
-      </li>
-    </ul>
-    <div>
+      <div class="footer-nav right">
+        <ul class="footer-nav-list">
+          <li class="footer-nav-item">
+          © 2014 TripMap
+          </li>
+        </ul>
+      </div>
 
-    </body>
+      <div class="clear"></div>
+    </div>
+  </div>
+
+</body>
   </html>
