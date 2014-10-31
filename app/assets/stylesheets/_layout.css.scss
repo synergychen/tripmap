@@ -1,0 +1,77 @@
+body {
+  min-width: 1020px;
+  font: 15px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #333;
+  background-color: #fff;
+  margin: 0;
+  display: block;
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #e5e5e5;
+  font: 16px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+
+  .header-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+
+.header-logo {
+}
+
+.header-title {
+  float: left;
+
+  .header-title-link {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .header-title-link:hover {
+    color: #2e6c6a;
+    text-decoration: none;
+  }
+}
+
+.header-nav {
+  .header-nav-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    .header-nav-item {
+      float: left;
+      display: inline block;
+    }
+
+    .header-nav-link {
+      padding: 4px 8px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .header-nav-link:hover {
+      color: #0040fa;
+      text-decoration: none;
+    }
+  }
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.header-clear {
+  clear: both
+}

@@ -11,7 +11,7 @@
     <div class="header-container">
       <div class="header-logo"></div>
 
-      <div class="header-title left">
+      <div class="header-title">
         <%= link_to "TripMap", trips_path, class: "header-title-link" %>
       </div>
 
@@ -42,13 +42,13 @@
           <% end %>
         </ul>
       </div>
+
+      <div class="header-clear"></div>
     </div>
   </div>
 
   <div class="main">
-    <hr />
     <%= yield %>
-    <hr />
   </div>
 
   <div class="footer">
